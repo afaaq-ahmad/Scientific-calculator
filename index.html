@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+<link rel="stylesheet" type="text/css" href="cstyle.css" />
+<body>
+    <div class="main">
+        <div style="FONT-FAMILY: none;
+        FONT-STYLE: oblique;
+        font-size: larger;">
+            CALCULATOR
+        </div>
+        <div class="result">
+            <p id="expression"></p>
+            <p id="screen"></p>
+        </div>
+        <div style="margin-top:10px; display: flex; justify-content: space-between;">
+            <button onclick="clearEntry()" id="backspace" style="background: #ff3399;">CE</button>
+            <button onclick="backward()" id="backtrack" style="background: #eb7a7a;">Back</button>
+            <button onclick="forward()" id="forwardtrack" style="background: #eb7a7a;">Forward</button>
+            <button onclick="getOutput()" id="ans" style=" background: #33cc33;">Ans</button>
+            <button onclick="clearAll()" id="clear" style="background:  #e43030;">AC</button>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button onclick="trigonometricOperations('sin')" id="sin">sin</button>
+            <button onclick="appendDigit(1)" id="1">1</button>
+            <button onclick="appendDigit(2)" id="2">2</button>
+            <button onclick="appendDigit(3)" id="3">3</button>
+            <button onclick="appendOperator('+')" id="addition">+</button>
+        </div>  
+        <div style="display: flex; justify-content: space-between;">
+            <button onclick="trigonometricOperations('cos')" id="cos">cos</button>
+            <button onclick="appendDigit(4)" id="4">4</button>
+            <button onclick="appendDigit(5)" id="5">5</button>
+            <button onclick="appendDigit(6)" id="6">6</button>
+            <button onclick="appendOperator('-')" id="substract">-</button>
+
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button onclick="trigonometricOperations('tan')" id="tan">tan</button>
+            <button onclick="appendDigit(7)" id="7">7</button>
+            <button onclick="appendDigit(8)" id="8">8</button>
+            <button onclick="appendDigit(9)" id="9">9</button>
+            <button onclick="appendOperator('*')" id="multiply">*</button>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button onclick="squareRoot('sqrt')" id="sqrt">sqrt</button>
+            <button onclick="appendOperator('^')" id="power">^</button>
+            <button onclick="appendDigit(0)"  id="0">0</button>
+            <button onclick="getOutput()" id="equate" style="background: #33ccff;">=</button>
+            <button onclick="appendOperator('/')" id="divide">/</button>
+        </div>
+       
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
